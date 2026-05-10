@@ -37,7 +37,8 @@
   justify-content: space-between;
   height: 4rem;
   padding: 0 1.5rem;
-  background-color: var(--bg) ;
+  background-color: var(--bg-blanco); 
+  border-bottom: 1px solid var(--borde);
 }
 
 .nav-menu ul {
@@ -66,9 +67,7 @@
   padding: 5px 10px;
 }
 
-/* =========================
-RESPONSIVE
-========================= */
+/* ====RESPONSIVE===== */
 @media (max-width: 768px) {
   .topbar {
     display: none;

@@ -1,57 +1,12 @@
-/* =========================
-   BOTÓN WHATSAPP FIXED
-========================= */
-
-/* La sección no necesita layout */
-/*.BotonWA {
-  position: relative;
-}*/
-
-/* Botón flotante */
 .whatsapp-sticky {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 9999;
-
-  /*width: 30px;
-  height: 30px;*/
-
-  /*display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: white;
-  border-radius: 50%;
-
-  text-decoration: none;*/
-
   transition: transform 0.3s;
 }
-
-
 
 /* Hover */
 .whatsapp-sticky:hover {
   transform: scale(1.3);
 }
-
-/* Click */
-/*.whatsapp-sticky:active {
-  transform: scale(0.95);
-}*/
-
-/* Responsive (más chico en mobile) */
-/*@media (max-width: 480px) {
-  .whatsapp-sticky {
-    width: 50px;
-    height: 50px;
-    bottom: 15px;
-    right: 15px;
-  }
-
-  .whatsapp-sticky img {
-    width: 26px;
-    height: 26px;
-  }
-}*/

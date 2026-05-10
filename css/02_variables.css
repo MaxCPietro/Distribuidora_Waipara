@@ -5,14 +5,12 @@
   --primario-dark: #ff6900;
 
   /* ===== SECUNDARIOS ===== */
-  --secundario: #7A8B7D;       /* verde oliva suave */
-  --secundario-light: #A8B5AA;
+  --secundario: #4F6D8A;        
+  --secundario-light: #8FA9C4;  
+  --secundario-dark: #2E4A62;   
 
-  --vino: #9A6A6C;             /* bordó pastel */
-  --vino-light: #C8A5A6;
-
-  /* ===== FONDOS ===== */
-  --bg: #F7F3EE;
+  /* ===== Borders ===== */
+  --borde: #ccc;
   --bg-card: #FFFDFB;
   --bg-dark: #ECE6DE;
   --bg-blanco: #FFFFFF;
@@ -20,14 +18,7 @@
   /* ===== TEXTOS ===== */
   --texto: #3C3A37;
   --texto2: #000;
-  --texto-soft: #6F6B66;
+  --texto-blanco: #fff;
   --texto-light: #9B948D;
-
-  /* ===== BORDES ===== */
-  --border: #DDD4CA;
-  --border-strong: #C9BCAE;
-
-  /* ===== EFECTOS ===== */
-  --shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 

@@ -1,7 +1,8 @@
 footer {
-  color: black;
-  margin: 0 80px;
-  font-family: 'Inter', sans-serif;
+  margin: 1em 0;
+  padding: 0 1.5em;
+  border-top: 1px solid var(--borde);
+  font-family: 'Quicksand', sans-serif;
 }
 
 .Footer1 {
@@ -10,108 +11,37 @@ footer {
   gap: 30px;
 }
 
-footer p{
-  color: #aaa;
-  line-height: 1.6;
-  font-size: 14px;
+.Footer1 h4 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  color: var(--primario-dark);
+  text-decoration: underline var(--primario);
+  font-family: 'Saira Stencil', sans-serif;
+}
+.Footer1 p{
+  color: var(--texto);
+  font-size: 0.8em;
 }
 
-/* LINKS */
-
-/*.footer-box ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-box ul li {
-  margin-bottom: 10px;
-}
-
-.footer-box a {
-  color: #aaa;
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
-
-.footer-box a:hover {
-  color: #fff;
-  padding-left: 6px;
-}*/
-
-/* REDES */
-
-.social-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* =========================
-   FOOTER BOTTOM
-========================= */
-
-.Footer2 {
-  border-top: 1px solid #1f1f1f;
-  text-align: center;
-  padding: 20px;
-  font-size: 13px;
-  color: #777;
-}
-
-/* =========================
-   SEGUNDO FOOTER (BOOTSTRAP STYLE)
-========================= */
-
-footer .container {
-  max-width: 1200px;
-  margin: 40px auto 0 auto;
-  padding: 30px 20px;
-
-  border-top: 1px solid #1f1f1f;
-}
-
-
-
-footer .columna {
+.Footer1 .columna {
   flex: 1;
   min-width: 250px;
-}
-
-/* TITULOS */
-
-footer .container h4 {
-  font-size: 14px;
-  margin-bottom: 12px;
-  color: black;
-  text-transform: uppercase;
-}
-
-/* TEXTO */
-
-footer .container p {
-  font-size: 13px;
-  color: #999;
-  margin-bottom: 8px;
 }
 
 /* REDES ICONOS */
 
 .social-buttons {
   display: flex;
-  gap: 12px;
-  padding: 0;
+  gap: 1em;
 }
 
 .social-buttons a {
-  font-size: 20px;
-  color: #aaa;
-  transition: 0.3s;
+  font-size: 1.5em;
+  color: var(--secundario-dark);
 }
 
 .social-buttons a:hover {
-  color: var(--primario, #f57c00);
-  transform: scale(1.1);
+  color: var(--primario-dark);
 }
 
 /* NEWSLETTER */
@@ -125,54 +55,48 @@ footer .container p {
 .newsletter-form input {
   flex: 1;
   padding: 10px;
-  border: none;
-  background: #1a1a1a;
-  color: #fff;
+  border: 1px solid var(--borde);
+  color: var(--secundario-dark);
   border-radius: 6px;
   outline: none;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .newsletter-form button {
-  background: var(--primario, #f57c00);
+  background: var(--primario-dark);
   border: none;
   padding: 10px 15px;
-  color:black;
+  color: var(--texto-blanco);
+  font-family: 'Quicksand', sans-serif;
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .newsletter-form button:hover {
-  background: #ff9800;
+  background: var(--secundario-dark);
 }
 
+.Footer2 {
+  border-top: 1px solid var(--borde);
+  margin-top: 1em;
+  padding: 0.8em 0 0 0;
+  font-size: 1em;
+  color: var(--texto);
+  text-align: center;
+}
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-/*@media (max-width: 900px) {
-  .FotterContainer {
-    grid-template-columns: repeat(2, 1fr);
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  footer {
+    padding: 0;
   }
-}
-
-@media (max-width: 600px) {
-  .FotterContainer {
-    grid-template-columns: 1fr;
+  .Footer1 {
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
-
-  .footer-box h3::after {
-    margin-left: auto;
-    margin-right: auto;
+  .Footer2 {
+    align-items: center;
   }
-
-  footer .row {
-    flex-direction: column;
-  }
-
-  .newsletter-form {
-    flex-direction: column;
-  }
-}*/
+}
