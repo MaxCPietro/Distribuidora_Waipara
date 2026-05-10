@@ -1,6 +1,6 @@
-# C25015 - Front-End JS 
+# C26124 - Front-End JS 
 ## Página con fines educativos
-Esta página será una tienda comercial (e-comerce) de la __bodega Correa Grieco__
+Sitio de Presentación de la Distribuidora __Waipara Valley__
 
 ## Tabla de Contenidos
 
@@ -46,4 +46,4 @@ Esta página será una tienda comercial (e-comerce) de la __bodega Correa Grieco
 * Flex columna.
 
 ## Sitio web
-* [Bodega Correa Grieco en GithutPages](falta)
+* [Bodega Correa Grieco en GithutPages](https://maxcpietro.github.io/Distribuidora_Waipara/)

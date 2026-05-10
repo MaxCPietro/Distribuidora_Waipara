@@ -32,12 +32,13 @@ footer {
 
 .social-buttons {
   display: flex;
+  justify-content: center;  
   gap: 1em;
 }
 
 .social-buttons a {
   font-size: 1.5em;
-  color: var(--secundario-dark);
+  color: var(--texto);
 }
 
 .social-buttons a:hover {
