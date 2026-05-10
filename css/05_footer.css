@@ -1,0 +1,178 @@
+footer {
+  color: black;
+  margin: 0 80px;
+  font-family: 'Inter', sans-serif;
+}
+
+.Footer1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+footer p{
+  color: #aaa;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* LINKS */
+
+/*.footer-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box a {
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.footer-box a:hover {
+  color: #fff;
+  padding-left: 6px;
+}*/
+
+/* REDES */
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.Footer2 {
+  border-top: 1px solid #1f1f1f;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* =========================
+   SEGUNDO FOOTER (BOOTSTRAP STYLE)
+========================= */
+
+footer .container {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  padding: 30px 20px;
+
+  border-top: 1px solid #1f1f1f;
+}
+
+
+
+footer .columna {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* TITULOS */
+
+footer .container h4 {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* TEXTO */
+
+footer .container p {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+/* REDES ICONOS */
+
+.social-buttons {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+}
+
+.social-buttons a {
+  font-size: 20px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.social-buttons a:hover {
+  color: var(--primario, #f57c00);
+  transform: scale(1.1);
+}
+
+/* NEWSLETTER */
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 6px;
+  outline: none;
+}
+
+.newsletter-form button {
+  background: var(--primario, #f57c00);
+  border: none;
+  padding: 10px 15px;
+  color:black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #ff9800;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/*@media (max-width: 900px) {
+  .FotterContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .FotterContainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-box h3::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer .row {
+    flex-direction: column;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+}*/
