@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="titulo">Talento Tech 2026</h2>
+    <button id="btn1" onclick="cambiarTitulo()">Cambiar titulo</button>
+
+    <div class="tarjeta">
+        <h3>Producto 1</h3>
+        <p>Descripción del producto 1</p>
+        <button onclick="resaltar()">Resaltar</button>
+    </div>
+
+    <script>
+        function cambiarTitulo() {
+            const titulo = document.getElementById("titulo");
+            titulo.textContent = "¡Bienvenidos a Talento Tech!";
+        }
+    </script>
+
+    <script>
+        function resaltar() {
+            document.querySelector(".tarjeta")
+            .style.backgroundColor='yellow'; 
+        }
+    </script>
+</body>
+</html>

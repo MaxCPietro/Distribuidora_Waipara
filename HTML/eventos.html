@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">Botón 1</button>
+    <button id="btn2">Botón 2</button>
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", function() {
+            alert("Botón 1 clicado");
+        });
+
+        document.getElementById("btn2").addEventListener("click", function() {
+            alert("Botón 2 clicado");
+        });
+    </script>
+
+    <script>    
+        window.addEventListener("load", function() {
+            alert("La ventana ha sido cargada");
+        });
+    </script>
+</body>
+</html>
