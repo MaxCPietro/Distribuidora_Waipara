@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+    <input type="text" id="inputNombre" placeholder="Ingrese su nombre">
+    <button id="btnGuardar">Guardar en Local Storage</button>
+    <button id="btnBorrar">Borrar nombre guardado</button>
+    <p id="nombreGuardado">Nombre guardado: <span id="nombreGuardado"></span></p>
+
+    <script>
+        const inputNombre = document.getElementById('inputNombre');
+        const btnGuardar = document.getElementById('btnGuardar');
+        const btnBorrar = document.getElementById('btnBorrar');
+        const nombreGuardado = document.getElementById('nombreGuardado');
+
+        const nombreGuardadoEnLocalStorage = localStorage.getItem('inputNombre');
+        if (nombreGuardadoEnLocalStorage) {
+            inputNombre.value = `Nombre guardado: ${nombreGuardadoEnLocalStorage}`;
+        }
+
+        btnGuardar.addEventListener('click', () => {
+            const nombre = inputNombre.value;
+            localStorage.setItem('inputNombre', nombre);
+            alert('Nombre guardado en Local Storage');
+            inputNombre.value = '';
+        });
+
+        btnBorrar.addEventListener('click', () => {
+            localStorage.removeItem('inputNombre');
+            inputNombre.value = '';
+            alert('Nombre borrado de Local Storage');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>API Documentation - Productos</h1>
+    <div id="mensaje">cargando.....</div>
+    <div id="productos"></div>
+
+    <script>
+        const contenedorProductos = document.getElementById('productos');
+        const mensaje = document.getElementById('mensaje');
+
+        fetch('https://fakestoreapi.com/products')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error en la solicitud: ' + response.status);
+                }
+                return response.json();
+            })
+            .then(data => {
+                data.forEach(producto => {
+                    const tarjeta = document.createElement('div');
+                    tarjeta.classList.add('producto'); // Agregar clase para estilo
+                    tarjeta.innerHTML = `
+                        <img src="${producto.image}" alt="${producto.title}" width="100">
+                        <h2>${producto.title}</h2>
+                        <p>${producto.category}</p>
+                        <p>${producto.description}</p>|
+                        <p>Precio: $${producto.price}</p>
+                        `;
+                    contenedorProductos.appendChild(tarjeta);
+                });
+            })
+            .catch(error => {
+                mensaje.textContent = 'Error al cargar los productos: ' + error.message;
+            });
+    </script>
+</body>
+</html>
