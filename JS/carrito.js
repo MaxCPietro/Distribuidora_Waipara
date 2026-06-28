@@ -25,5 +25,6 @@ function mostrarCarrito() {
 agregarProducto({nombre: "Camisa", precio: 20});
 agregarProducto({nombre: "Pantalón", precio: 40});
 agregarProducto({nombre: "Zapatos", precio: 60});
+agregarProducto({nombre: "Sombrero", precio: 15});
 mostrarCarrito();
 console.log(`Total en el carrito: ${calcularTotal()}`);
