@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Await/Async</h1>
+    <button id="btnUsuario">Click Me</button>
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        const btnUsuario = document.getElementById('btnUsuario');
+        const resultado = document.getElementById('resultado');
+
+        btnUsuario.addEventListener('click', async function() {
+            try {
+                const response = await fetch('https://randomuser.me/api/'); //hasta que la promesa no se resuelva, no se ejecuta la siguiente linea
+                console.log("respuesta recibida:", response);
+                const data = await response.json();
+                console.log("data recibida:", data); //dentro de data, hay un arreglo llamado results, que contiene un objeto con la informacion del usuario
+                const usuario = data.results[0];
+                console.log("nombre del usuario:", usuario.name.first, usuario.name.last);
+                console.log("email del usuario:", usuario.email);
+                console.log("pais del usuario:", usuario.location.country);
+                console.log("imagen del usuario:", usuario.picture.large);
+                resultado.innerHTML = `
+
+                    <h2>Usuario</h2>
+                    <p>Nombre: ${usuario.name.first} ${usuario.name.last}</p>
+                    <p>Email: ${usuario.email}</p>
+                    <p>Pais: ${usuario.location.country}</p>
+                    <img src="${usuario.picture.large}" alt="Imagen del usuario">
+                `;
+            } catch (error) {
+                resultado.innerHTML = `<p>Error al obtener el usuario: ${error.message}</p>`;
+            }
+        })
+    </script>
+</body>
+</html>
