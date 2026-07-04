@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/03_header.css" />
     <link rel="stylesheet" href="css/04_main.css" />
     <link rel="stylesheet" href="css/05_footer.css" />
+    <link rel="stylesheet" href="css/06_tienda.css" />
     <link rel="stylesheet" href="css/99_botonWA.css" />
   
   </head>
@@ -37,6 +38,7 @@
         <nav class="nav-menu">
           <ul>
             <li><a href="#hero">Inicio</a></li>
+            <li><a href="#tienda">Tienda</a></li>
             <li><a href="#productosMasVendidos">Productos</a></li>
             <li><a href="#clientes">Clientes</a></li>
             <li><a href="#contacto">Contacto</a></li>
@@ -54,7 +56,48 @@
         </div>
       </section>
 
-      <!--Seccion 2 Productos Mas Vendidos -->
+      <!--Seccion 2 Tienda -->
+      <section class="tienda" id="tienda" style="border: 5px solid green;">
+        <h2>Nuestra Tienda on line</h2>
+        <div class="tienda-container" style="border: 5px solid black;">
+                  <!-- Lista de productos disponibles -->
+        <div class="productos-lista">
+            <h3>Productos Disponibles</h3>
+            <ul id="lista-productos">
+                <!-- Los productos se cargan desde JavaScript -->
+                <li class="producto" data-id="1" data-nombre="Malbec Tradicional" data-precio="1500">
+                    <span class="nombre">Malbec Tradicional</span>
+                    <span class="precio">$1500</span>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Carrito -->
+        <aside class="carrito-box">
+            <h3>🛒 Tu carrito (<span id="cantidad-carrito">0</span>)</h3>
+
+            <ul id="items-carrito">
+                <!-- Los items del carrito se cargan desde JavaScript -->
+            </ul>
+
+            <div class="carrito-total">
+                <span>Total:</span>
+                <strong id="total-carrito">$0</strong>
+            </div>
+
+            <div class="carrito-acciones">
+                <button id="btn-vaciar" class="btn-secundario">Vaciar</button>
+                <button id="btn-pagar" class="btn">Pagar</button>
+            </div>
+
+            <p class="carrito-nota">* El pago es una demostración, no se procesa ningún cobro real.</p>
+        </aside>
+        </div>
+        <P class="VolverAlInicio"><a href="#hero">Volver al Inicio</a></P>
+      </section>
+
+      <!--Seccion 3 Productos Mas Vendidos -->
       <section class="ProductosMasVendidos" id="productosMasVendidos">
         <h2>Productos Mas Vendidos</h2>
         <div class="ProductosMasVendidos-container">
@@ -122,7 +165,7 @@
         <P class="VolverAlInicio"><a href="#hero">Volver al Inicio</a></P>
       </section>
         
-      <!--Seccion 3 Contacto -->
+      <!--Seccion 4 Contacto -->
       <section class=Contacto id="contacto">
           <div class="ContactoHeader">
             <h2>Contactanos</h2>
@@ -246,5 +289,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/carrito.js"></script>
 </body>
 </html>
