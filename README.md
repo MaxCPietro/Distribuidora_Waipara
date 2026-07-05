@@ -39,6 +39,7 @@ Sitio de Presentación de la Distribuidora __Waipara Valley__
 * La persistencia de los datos se guardan en localStorage por lo que siempre quedan guardados hasta que se cierre sesión.
 #### Funciones JS
 * Funcion 1
+* Funcion 2
 ### Productos Mas Vendidos
 * Flex para el diseños de las cards con efecto de elevación cuando se pasa con el mouse.
 * El contenido de la card también hecho con flex horizontal.
