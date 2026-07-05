@@ -296,8 +296,8 @@
 #modalRating{
 
     font-size:18px;
-    font-weight:bold;
-    color:var(--primario);
+    color:var(--primario-dark);
+    font-family: 'quicksand', sans-serif;
 
 }
 
@@ -306,16 +306,11 @@
 #cerrarModal{
 
     position:absolute;
-
     right:18px;
     top:10px;
-
-    font-size:34px;
-
+    font-size:3em;
     cursor:pointer;
-
     color:#777;
-
 }
 
 #cerrarModal:hover{
